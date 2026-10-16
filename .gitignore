@@ -1,2 +1,10 @@
+# Java build output
 out/
 *.class
+
+# Local application data may contain student records or credentials.
+# Existing tracked files must also be removed from Git separately.
+data/*.tsv
+
+# Allow intentionally sanitized fixtures/templates to be committed.
+!data/*.example.tsv
